@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E40C15582BA4D334007FA124 /* CameraModeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40C15572BA4D334007FA124 /* CameraModeModel.swift */; };
 		E4373CA52BA4B53600B8A2FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4373CA42BA4B53600B8A2FB /* AppDelegate.swift */; };
 		E4373CA72BA4B53600B8A2FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4373CA62BA4B53600B8A2FB /* SceneDelegate.swift */; };
 		E4373CA92BA4B53600B8A2FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4373CA82BA4B53600B8A2FB /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E40C15572BA4D334007FA124 /* CameraModeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraModeModel.swift; sourceTree = "<group>"; };
 		E4373CA12BA4B53600B8A2FB /* CameraMode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraMode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4373CA42BA4B53600B8A2FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4373CA62BA4B53600B8A2FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E40C15562BA4D323007FA124 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E40C15572BA4D334007FA124 /* CameraModeModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		E4373C982BA4B53600B8A2FB = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +68,7 @@
 		E4373CA32BA4B53600B8A2FB /* CameraMode */ = {
 			isa = PBXGroup;
 			children = (
+				E40C15562BA4D323007FA124 /* Models */,
 				E4373CB82BA4B5ED00B8A2FB /* App */,
 				E4373CBA2BA4B75600B8A2FB /* Camera */,
 				E4373CB92BA4B5FB00B8A2FB /* Resources */,
@@ -165,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E40C15582BA4D334007FA124 /* CameraModeModel.swift in Sources */,
 				E4373CA92BA4B53600B8A2FB /* ViewController.swift in Sources */,
 				E4373CBC2BA4B78C00B8A2FB /* CameraViewModel.swift in Sources */,
 				E4373CA52BA4B53600B8A2FB /* AppDelegate.swift in Sources */,
