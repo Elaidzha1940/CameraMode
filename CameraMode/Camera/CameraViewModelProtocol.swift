@@ -15,7 +15,6 @@ protocol CameraViewModelProtocol {
     var isWideScreenAvailable: Bool { get }
     var isWideScreenEnabled: Bool { get set }
     var isCameraFlipAvailable: Bool { get }
-    
     func getAvailableCameraModes() -> [CameraModeModel]
     func getRecentImage() -> UIImage?
 }

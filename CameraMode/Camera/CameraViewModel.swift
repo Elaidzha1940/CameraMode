@@ -18,6 +18,7 @@ class CameraViewModel {
 
 //MARK: - CameraViewModelProtocol
 extension CameraModeModel: CameraViewModelProtocol {
+    
     var isFlashEnabled: Bool {
         get {
             userDefaults.bool(forKey: "isFlashEnabled")
@@ -76,6 +77,6 @@ extension CameraModeModel: CameraViewModelProtocol {
     }
     
     func getRecentImage() -> UIImage? {
-        dbManager.getRecentImage()
+       return dbManager.getRecentImage()
     }
 }
