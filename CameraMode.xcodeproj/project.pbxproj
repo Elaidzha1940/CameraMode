@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		E40C15582BA4D334007FA124 /* CameraModeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40C15572BA4D334007FA124 /* CameraModeModel.swift */; };
+		E40C155A2BA4EFD2007FA124 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40C15592BA4EFD2007FA124 /* CameraViewModel.swift */; };
+		E40C155D2BA4F0C1007FA124 /* DBServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40C155C2BA4F0C1007FA124 /* DBServices.swift */; };
 		E4373CA52BA4B53600B8A2FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4373CA42BA4B53600B8A2FB /* AppDelegate.swift */; };
 		E4373CA72BA4B53600B8A2FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4373CA62BA4B53600B8A2FB /* SceneDelegate.swift */; };
 		E4373CA92BA4B53600B8A2FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4373CA82BA4B53600B8A2FB /* ViewController.swift */; };
 		E4373CAC2BA4B53600B8A2FB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E4373CAB2BA4B53600B8A2FB /* Base */; };
 		E4373CAE2BA4B53700B8A2FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4373CAD2BA4B53700B8A2FB /* Assets.xcassets */; };
 		E4373CB12BA4B53700B8A2FB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E4373CB02BA4B53700B8A2FB /* Base */; };
-		E4373CBC2BA4B78C00B8A2FB /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4373CBB2BA4B78C00B8A2FB /* CameraViewModel.swift */; };
+		E4373CBC2BA4B78C00B8A2FB /* CameraViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4373CBB2BA4B78C00B8A2FB /* CameraViewModelProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E40C15572BA4D334007FA124 /* CameraModeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraModeModel.swift; sourceTree = "<group>"; };
+		E40C15592BA4EFD2007FA124 /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
+		E40C155C2BA4F0C1007FA124 /* DBServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBServices.swift; sourceTree = "<group>"; };
 		E4373CA12BA4B53600B8A2FB /* CameraMode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraMode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4373CA42BA4B53600B8A2FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4373CA62BA4B53600B8A2FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,7 +31,7 @@
 		E4373CAD2BA4B53700B8A2FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4373CB02BA4B53700B8A2FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4373CB22BA4B53700B8A2FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E4373CBB2BA4B78C00B8A2FB /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
+		E4373CBB2BA4B78C00B8A2FB /* CameraViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModelProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +53,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		E40C155B2BA4F0A5007FA124 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E40C155C2BA4F0C1007FA124 /* DBServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		E4373C982BA4B53600B8A2FB = {
 			isa = PBXGroup;
 			children = (
@@ -68,9 +80,10 @@
 		E4373CA32BA4B53600B8A2FB /* CameraMode */ = {
 			isa = PBXGroup;
 			children = (
-				E40C15562BA4D323007FA124 /* Models */,
 				E4373CB82BA4B5ED00B8A2FB /* App */,
 				E4373CBA2BA4B75600B8A2FB /* Camera */,
+				E40C155B2BA4F0A5007FA124 /* Services */,
+				E40C15562BA4D323007FA124 /* Models */,
 				E4373CB92BA4B5FB00B8A2FB /* Resources */,
 			);
 			path = CameraMode;
@@ -100,7 +113,8 @@
 			children = (
 				E4373CA82BA4B53600B8A2FB /* ViewController.swift */,
 				E4373CAA2BA4B53600B8A2FB /* Main.storyboard */,
-				E4373CBB2BA4B78C00B8A2FB /* CameraViewModel.swift */,
+				E4373CBB2BA4B78C00B8A2FB /* CameraViewModelProtocol.swift */,
+				E40C15592BA4EFD2007FA124 /* CameraViewModel.swift */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
@@ -178,9 +192,11 @@
 			files = (
 				E40C15582BA4D334007FA124 /* CameraModeModel.swift in Sources */,
 				E4373CA92BA4B53600B8A2FB /* ViewController.swift in Sources */,
-				E4373CBC2BA4B78C00B8A2FB /* CameraViewModel.swift in Sources */,
+				E4373CBC2BA4B78C00B8A2FB /* CameraViewModelProtocol.swift in Sources */,
 				E4373CA52BA4B53600B8A2FB /* AppDelegate.swift in Sources */,
+				E40C155D2BA4F0C1007FA124 /* DBServices.swift in Sources */,
 				E4373CA72BA4B53600B8A2FB /* SceneDelegate.swift in Sources */,
+				E40C155A2BA4EFD2007FA124 /* CameraViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +274,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -315,7 +331,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
