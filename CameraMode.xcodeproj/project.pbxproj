@@ -13,6 +13,7 @@
 		E4373CAC2BA4B53600B8A2FB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E4373CAB2BA4B53600B8A2FB /* Base */; };
 		E4373CAE2BA4B53700B8A2FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4373CAD2BA4B53700B8A2FB /* Assets.xcassets */; };
 		E4373CB12BA4B53700B8A2FB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E4373CB02BA4B53700B8A2FB /* Base */; };
+		E4373CBC2BA4B78C00B8A2FB /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4373CBB2BA4B78C00B8A2FB /* CameraViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E4373CAD2BA4B53700B8A2FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4373CB02BA4B53700B8A2FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4373CB22BA4B53700B8A2FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4373CBB2BA4B78C00B8A2FB /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				E4373CB82BA4B5ED00B8A2FB /* App */,
+				E4373CBA2BA4B75600B8A2FB /* Camera */,
 				E4373CB92BA4B5FB00B8A2FB /* Resources */,
-				E4373CA82BA4B53600B8A2FB /* ViewController.swift */,
-				E4373CAA2BA4B53600B8A2FB /* Main.storyboard */,
 			);
 			path = CameraMode;
 			sourceTree = "<group>";
@@ -81,6 +82,16 @@
 				E4373CB22BA4B53700B8A2FB /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		E4373CBA2BA4B75600B8A2FB /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				E4373CA82BA4B53600B8A2FB /* ViewController.swift */,
+				E4373CAA2BA4B53600B8A2FB /* Main.storyboard */,
+				E4373CBB2BA4B78C00B8A2FB /* CameraViewModel.swift */,
+			);
+			path = Camera;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4373CA92BA4B53600B8A2FB /* ViewController.swift in Sources */,
+				E4373CBC2BA4B78C00B8A2FB /* CameraViewModel.swift in Sources */,
 				E4373CA52BA4B53600B8A2FB /* AppDelegate.swift in Sources */,
 				E4373CA72BA4B53600B8A2FB /* SceneDelegate.swift in Sources */,
 			);
