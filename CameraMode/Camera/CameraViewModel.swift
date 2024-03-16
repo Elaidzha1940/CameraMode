@@ -17,14 +17,14 @@ class CameraViewModel {
 }
 
 //MARK: - CameraViewModelProtocol
-extension CameraModeModel: CameraViewModelProtocol {
+extension CameraViewModel: CameraViewModelProtocol {
     
     var isFlashEnabled: Bool {
         get {
             userDefaults.bool(forKey: "isFlashEnabled")
         }
         set {
-            userDefaults.set(newValue, "isFlashEnabled")
+            userDefaults.set(newValue, forKey: "isFlashEnabled")
         }
     }
     
@@ -33,7 +33,7 @@ extension CameraModeModel: CameraViewModelProtocol {
             userDefaults.bool(forKey: "isLivePhotoEnabled")
         }
         set {
-            userDefaults.set(newValue, "isLivePhotoEnabled")
+            userDefaults.set(newValue, forKey: "isLivePhotoEnabled")
         }
     }
     
@@ -50,7 +50,7 @@ extension CameraModeModel: CameraViewModelProtocol {
             userDefaults.bool(forKey: "isWideScreenAvailable")
         }
         set {
-            userDefaults.set(newValue, "isWideScreenAvailable")
+            userDefaults.set(newValue, forKey: "isWideScreenAvailable")
         }
     }
     
