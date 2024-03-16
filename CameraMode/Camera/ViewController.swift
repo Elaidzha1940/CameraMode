@@ -13,21 +13,32 @@ class ViewController: UIViewController {
     @IBOutlet private var flashButton: UIButton!
     @IBOutlet private var livePhotoButton: UIButton!
     
-    let viewModel: CameraViewModelProtocol = CameraViewModel()
+    var viewModel: CameraViewModelProtocol = CameraViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configureFlashButton()
+        configureLivePhotoButton()
+    }
+    
+    @IBAction func didTapFlashButton() {
+        viewModel.isFlashEnabled = !viewModel.isFlashEnabled
+        configureFlashButton()
+    }
+    
+    @IBAction func didTapLivePhotoButton() {
+        viewModel.isLivePhotoEnabled = !viewModel.isLivePhotoEnabled
+        configureLivePhotoButton()
     }
     
     private func configureFlashButton() {
-        let systemName = viewModel.isFlashEnabled ? "lightbulb" : "lightbulb.slash"
+        let systemName = viewModel.isFlashEnabled ? "flashlight.off.circle.fill" : "flashlight.slash.circle"
         flashButton.setImage(UIImage(systemName: systemName), for: .normal)
     }
     
     private func configureLivePhotoButton() {
         let systemName = viewModel.isFlashEnabled ? "livephoto" : "livephoto.slash"
-        flashButton.setImage(UIImage(systemName: systemName), for: .normal)
+        livePhotoButton.setImage(UIImage(systemName: systemName), for: .normal)
     }
 }
 
